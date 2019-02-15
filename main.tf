@@ -121,7 +121,8 @@ module "dcos-infrastructure" {
   num_public_agents  = "${var.num_public_agents}"
   admin_ips          = "${var.admin_ips}"
 
-  labels = "${var.labels}"
+  # Took out the `labels` option as it's currently a beta feature for GCP.
+  # labels = "${var.labels}"
 
   dcos_version = "${var.dcos_version}"
 

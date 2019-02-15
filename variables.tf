@@ -28,11 +28,12 @@ variable "num_public_agents" {
   default     = 1
 }
 
-variable "labels" {
-  description = "Add custom labels to all resources"
-  type        = "map"
-  default     = {}
-}
+# Took out the `labels` option as it's currently a beta feature for GCP.
+#variable "labels" {
+#  description = "Add custom labels to all resources"
+#  type        = "map"
+#  default     = {}
+#}
 
 variable "admin_ips" {
   description = "List of CIDR admin IPs"
